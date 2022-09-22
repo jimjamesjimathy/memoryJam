@@ -1,38 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    background-color: #264653;
+    height: 100vh;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
   }
-  to {
-    transform: rotate(360deg);
+
+  h1 {
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: 11px;
+    font-weight: 100;
+    font-size: 4rem;
   }
-}
+
+  button {
+    background: #2A9D8F;
+    border: 1px solid #F5F5F5;
+    padding: 3px 12px;
+    border-radius: 4px;
+    color: #F5F5F5;
+    cursor: pointer;
+    font-size: 19px;
+  }
+  button:hover {
+    background: #228176;
+    color: #EDE8E9;
+  }
+  .card-grid {
+    padding: 0 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
